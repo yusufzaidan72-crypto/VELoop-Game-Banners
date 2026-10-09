@@ -1,0 +1,52 @@
+/* GameCoinBalance.module.css */
+.balance {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(10, 5, 20, 0.8);
+  border: 2px solid var(--gold);
+  border-radius: 12px;
+  padding: 8px 16px 8px 10px;
+  font-family: var(--font-arcade);
+  font-size: 10px;
+  color: var(--gold);
+  transition: all var(--transition);
+  white-space: nowrap;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2), inset 0 0 10px rgba(255, 215, 0, 0.1);
+  text-shadow: 0 0 5px var(--gold);
+}
+
+.balance:hover {
+  background: rgba(255, 215, 0, 0.1);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4), inset 0 0 15px rgba(255, 215, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.coinImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 5px var(--gold));
+  animation: pulse 2s infinite;
+}
+
+.amount {
+  line-height: 1;
+}
+
+.label {
+  font-size: 8px;
+  font-family: var(--font-display);
+  color: var(--gold-light);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+
+/* Size variants */
+.sm .coinImg  { width: 24px; height: 24px; }
+.sm           { font-size: 8px; padding: 6px 12px 6px 8px; }
+.lg .coinImg  { width: 40px; height: 40px; }
+.lg           { font-size: 14px; padding: 12px 24px 12px 14px; }

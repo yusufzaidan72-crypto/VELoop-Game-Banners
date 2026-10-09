@@ -1,0 +1,132 @@
+.footer {
+  width: 100%;
+  background: linear-gradient(180deg, #090314 0%, #040108 100%);
+  border-top: 1px solid rgba(0, 240, 255, 0.2);
+  margin-top: 48px;
+  padding: 40px 24px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 36px;
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoImg {
+  height: 34px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.5));
+}
+
+.brandTitle {
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.25rem;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
+.brandTitle span {
+  color: #ff2a85;
+  font-size: 0.85rem;
+}
+
+.brandDesc {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.5;
+  margin: 0;
+  max-width: 480px;
+}
+
+.guaranteeTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: #00ff88;
+  background: rgba(0, 255, 136, 0.1);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  padding: 6px 12px;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.linksCol {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linksCol h4 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 0.85rem;
+  color: #00f0ff;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.linksCol ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.linksCol a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.2s ease;
+}
+
+.linksCol a:hover {
+  color: #ff2a85;
+}
+
+.bottomBar {
+  max-width: 1200px;
+  margin: 32px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.craftedBy {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .bottomBar {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}

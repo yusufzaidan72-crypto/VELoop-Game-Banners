@@ -82,4 +82,8 @@ To reset the local demo wallet, clear the `veloop-games-wallet-v1` key from brow
 
 The app is a static Vite site and can be deployed to Vercel or Netlify. Use `npm run build` as the build command and `dist` as the output directory. This project has not been connected to a GitHub repository or deployed yet.
 
+### GitHub Pages
+
+Pushing to `main` runs the GitHub Actions workflow in `.github/workflows/deploy.yml`. It builds the project for the `/VELoop-Game-Banners/` repository path and deploys the site to GitHub Pages. The project routes are configured to support page refreshes through a generated `404.html` fallback.
+
 # VELoop-Game-Banners
